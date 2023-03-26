@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "dream_job_app",
+    "slug": "dream_job_app"
+  }
+}
