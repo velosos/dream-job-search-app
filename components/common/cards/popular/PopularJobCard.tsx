@@ -3,7 +3,22 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import styles from './popularjobcard.style'
 import { checkImageURL } from '../../../../utils'
 
-const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
+export type itemData = {
+  employer_logo: string,
+  employer_name: string,
+  job_title: string,
+  job_country: string,
+}
+
+
+export type PopularJobCardProps = {
+  item: itemData[],
+  selectedJob: number,
+  handleCardPress?: () => void
+}
+
+
+const PopularJobCard = ({ item, selectedJob, handleCardPress }: PopularJobCardProps) => {
   return (
     <TouchableOpacity
       style={styles.container(selectedJob, item)}

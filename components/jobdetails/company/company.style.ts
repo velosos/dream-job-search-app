@@ -56,6 +56,13 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     marginLeft: 2,
   },
+  imageNull: {
+    fontSize: SIZES.xxLarge,
+    alignItems: "center",
+    justifyContent: "center",
+    color: COLORS.tertiary
+
+  }
 });
 
 export default styles;

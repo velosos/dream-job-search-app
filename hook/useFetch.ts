@@ -27,6 +27,7 @@ const useFetch = (endpoint: string, query) => {
       setData(response.data.data)
       setIsLoading(false)
     } catch (err) {
+      console.log(err)
       setError(err)
     } finally {
       setIsLoading(false)
